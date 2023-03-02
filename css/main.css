@@ -35,13 +35,12 @@ h1 {
     border: 1px #FFF solid;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 100%;
     margin-bottom: var(--footer-height);
 }
 
 #flexbox > section {
     border: 1px green solid;
-    flex-grow: 1;
+    flex-grow: 1; /*1 = true 0 (default) = false*/
     flex-basis: 20rem;
 }
 
@@ -51,6 +50,10 @@ footer {
     color: var(--background-color);
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: var(--footer-height);
+}
+
+footer > p {
+    animation: 3s linear 1s infinite;
 }
